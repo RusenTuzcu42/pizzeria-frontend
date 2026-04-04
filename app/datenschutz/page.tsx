@@ -22,6 +22,7 @@ export default function Datenschutz() {
         <li>Referrer-URL</li>
       </ul>
       <p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren und technischen Bereitstellung der Website).</p>
+      <p>Die Daten können in die USA übertragen werden. Für die USA besteht ein Angemessenheitsbeschluss der EU-Kommission (EU-US Data Privacy Framework), sofern der Anbieter entsprechend zertifiziert ist.</p>
 
       <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: '24px', marginBottom: '8px' }}>Zweck der Datenverarbeitung</h2>
       <p>Die Daten werden zur technischen Bereitstellung, Stabilität und Sicherheit der Website verarbeitet.</p>
@@ -30,7 +31,7 @@ export default function Datenschutz() {
       <p>Die Server-Logfiles werden für maximal 7 Tage gespeichert und anschließend automatisch gelöscht.</p>
 
       <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: '24px', marginBottom: '8px' }}>Cookies</h2>
-      <p>Diese Website verwendet keine Cookies zu Analyse- oder Trackingzwecken. Es können jedoch technisch notwendige Cookies eingesetzt werden, die für den Betrieb der Website erforderlich sind.</p>
+      <p>Diese Website verwendet keine Tracking-Cookies. Es können jedoch technisch notwendige Cookies eingesetzt werden, die für den Betrieb der Website erforderlich sind.</p>
 
       <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: '24px', marginBottom: '8px' }}>Ihre Rechte</h2>
       <p>Sie haben jederzeit das Recht auf:</p>
