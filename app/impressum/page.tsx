@@ -12,9 +12,6 @@ export default function Impressum() {
       Telefon: 02339 9116777<br />
       E-Mail: pizzeria-gevelsberg@outlook.com</p>
 
-      <p><strong>Umsatzsteuer-ID</strong><br />
-      Die Umsatzsteuer-Identifikationsnummer wird nachgereicht und hier in Kürze ergänzt.</p>
-
       <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</strong><br />
       Fikret Tuzcu (Anschrift wie oben)</p>
     </div>

@@ -337,6 +337,11 @@ export default function Home() {
             <span style={{ color: textSecondary }}>|</span>
             <a href="/datenschutz" style={{ fontSize: "0.75rem", color: textSecondary, textDecoration: "none" }}>Datenschutz</a>
           </div>
+          <div style={{ display: "flex", justifyContent: "center", gap: "24px", marginBottom: "24px" }}>
+            <a href="/impressum" style={{ fontSize: "0.75rem", color: textSecondary, textDecoration: "none" }}>Impressum</a>
+            <span style={{ color: textSecondary }}>|</span>
+            <a href="/datenschutz" style={{ fontSize: "0.75rem", color: textSecondary, textDecoration: "none" }}>Datenschutz</a>
+          </div>
           <div style={{ fontSize: '0.75rem', color: textSecondary, paddingTop: 24, borderTop: `0.5px solid ${borderColor}` }}>© 2024 Pizzeria Napoli. Alle Rechte vorbehalten.</div>
         </div>
       </footer>
