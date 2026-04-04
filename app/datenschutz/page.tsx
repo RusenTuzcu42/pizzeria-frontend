@@ -15,7 +15,7 @@ export default function Datenschutz() {
       E-Mail: pizzeria-gevelsberg@outlook.com</p>
 
       <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: '24px', marginBottom: '8px' }}>3. Hosting</h2>
-      <p>Diese Website wird bei <strong>Vercel Inc.</strong> gehostet. Beim Besuch unserer Website werden automatisch folgende Daten erfasst (sog. Server-Logfiles):</p>
+      <p>Diese Website wird bei Vercel Inc. gehostet. Beim Besuch unserer Website werden automatisch folgende Daten erfasst (sog. Server-Logfiles):</p>
       <ul style={{ marginLeft: '20px' }}>
         <li>IP-Adresse des Besuchers</li>
         <li>Datum und Uhrzeit des Zugriffs</li>
@@ -39,13 +39,13 @@ export default function Datenschutz() {
       <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: '24px', marginBottom: '8px' }}>7. Ihre Rechte als Betroffener</h2>
       <p>Sie haben jederzeit das Recht auf:</p>
       <ul style={{ marginLeft: '20px' }}>
-        <li><strong>Auskunft</strong> über Ihre gespeicherten Daten (Art. 15 DSGVO)</li>
-        <li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO)</li>
-        <li><strong>Löschung</strong> Ihrer Daten (Art. 17 DSGVO)</li>
-        <li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
-        <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
-        <li><strong>Widerspruch gegen die Verarbeitung</strong> (Art. 21 DSGVO)</li>
-        <li><strong>Widerruf Ihrer Einwilligung</strong> (Art. 7 Abs. 3 DSGVO)</li>
+        <li>Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)</li>
+        <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+        <li>Löschung Ihrer Daten (Art. 17 DSGVO)</li>
+        <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+        <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+        <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+        <li>Widerruf Ihrer Einwilligung (Art. 7 Abs. 3 DSGVO)</li>
       </ul>
       <p>Zur Geltendmachung Ihrer Rechte kontaktieren Sie uns bitte unter der oben genannten E-Mail-Adresse.</p>
 
