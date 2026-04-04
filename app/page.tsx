@@ -332,6 +332,11 @@ export default function Home() {
             <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Öffnungszeiten</div><div style={{ fontSize: '0.875rem', color: textColor }}>Täglich 11:00 - 22:00 Uhr</div></div>
             <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Lieferung</div><div style={{ fontSize: '0.875rem', color: textColor }}>Frei Haus ab 10€</div></div>
           </div>
+          <div style={{ display: "flex", justifyContent: "center", gap: "24px", marginBottom: "24px" }}>
+            <a href="/impressum" style={{ fontSize: "0.75rem", color: textSecondary, textDecoration: "none" }}>Impressum</a>
+            <span style={{ color: textSecondary }}>|</span>
+            <a href="/datenschutz" style={{ fontSize: "0.75rem", color: textSecondary, textDecoration: "none" }}>Datenschutz</a>
+          </div>
           <div style={{ fontSize: '0.75rem', color: textSecondary, paddingTop: 24, borderTop: `0.5px solid ${borderColor}` }}>© 2024 Pizzeria Napoli. Alle Rechte vorbehalten.</div>
         </div>
       </footer>
