@@ -21,9 +21,7 @@ function SkeletonLoader() {
     <div style={{ maxWidth: 1200, margin: '0 auto', padding: '24px' }}>
       <div style={{ height: 300, background: 'linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)', backgroundSize: '200% 100%', animation: 'shimmer 1.5s infinite', borderRadius: 28, marginBottom: 32 }}></div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 24 }}>
-        {[1,2,3,4].map(i => (
-          <div key={i} style={{ height: 180, background: 'linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)', backgroundSize: '200% 100%', animation: 'shimmer 1.5s infinite', borderRadius: 20 }}></div>
-        ))}
+        {[1,2,3,4].map(i => <div key={i} style={{ height: 180, background: 'linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)', backgroundSize: '200% 100%', animation: 'shimmer 1.5s infinite', borderRadius: 20 }}></div>)}
       </div>
       <style>{`@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }`}</style>
     </div>
@@ -63,25 +61,16 @@ export default function Home() {
 
   const categories = [...new Set(products.map(p => p.category))];
   useEffect(() => {
-    if (categories.length > 0 && !selectedCategory) {
-      setSelectedCategory(categories[0]);
-    }
+    if (categories.length > 0 && !selectedCategory) setSelectedCategory(categories[0]);
   }, [categories, selectedCategory]);
 
-  const filteredProducts = products.filter(p => {
-    const matchesCategory = p.category === selectedCategory;
-    const matchesSearch = searchQuery === '' || p.name.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
-
+  const filteredProducts = products.filter(p => p.category === selectedCategory && (searchQuery === '' || p.name.toLowerCase().includes(searchQuery.toLowerCase())));
   const highlights = products.filter(p => p.category === 'Pizzen' || p.category === 'Nudelgerichte').slice(0, 4);
 
   const addToCart = (product: Product) => {
     setCart(prev => {
       const existing = prev.find(item => item.id === product.id);
-      if (existing) {
-        return prev.map(item => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item);
-      }
+      if (existing) return prev.map(item => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item);
       return [...prev, { ...product, quantity: 1 }];
     });
   };
@@ -89,9 +78,7 @@ export default function Home() {
   const removeFromCart = (id: number) => {
     setCart(prev => {
       const existing = prev.find(item => item.id === id);
-      if (existing?.quantity === 1) {
-        return prev.filter(item => item.id !== id);
-      }
+      if (existing?.quantity === 1) return prev.filter(item => item.id !== id);
       return prev.map(item => item.id === id ? { ...item, quantity: item.quantity - 1 } : item);
     });
   };
@@ -100,10 +87,7 @@ export default function Home() {
   const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   const submitOrder = async () => {
-    if (!form.name || !form.phone) {
-      alert('Bitte Name und Telefon eingeben');
-      return;
-    }
+    if (!form.name || !form.phone) { alert('Bitte Name und Telefon eingeben'); return; }
     const res = await fetch(`${API_URL}/api/orders`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -177,15 +161,15 @@ export default function Home() {
         {/* HOME TAB */}
         {activeTab === 'home' && !showCheckout && (
           <div>
-            {/* Hero mit dezentem Rot */}
-            <div style={{ background: 'linear-gradient(135deg, #f5f0eb 0%, #e8e0d8 100%)', borderRadius: 28, marginBottom: 32, overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
+            {/* Hero mit alter dunkler Farbe */}
+            <div style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)', borderRadius: 28, marginBottom: 32, overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
               <div style={{ padding: '48px 24px', textAlign: 'center' }}>
-                <h1 style={{ fontSize: '2.5rem', fontWeight: 700, color: '#2d2d2d', marginBottom: 16, letterSpacing: '-0.02em' }}>Pizzeria Napoli</h1>
-                <p style={{ color: '#5a5a5a', fontSize: '1rem', marginBottom: 24 }}>Authentische italienische Küche · Handgemachte Pizzen</p>
+                <h1 style={{ fontSize: '2.5rem', fontWeight: 700, color: 'white', marginBottom: 16, letterSpacing: '-0.02em' }}>Pizzeria Napoli</h1>
+                <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1rem', marginBottom: 24 }}>Authentische italienische Küche · Handgemachte Pizzen</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 32 }}>
-                  <div><div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#c41e3a' }}>130+</div><div style={{ fontSize: '0.7rem', color: '#6a6a6a' }}>Bewertungen</div></div>
-                  <div><div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#c41e3a' }}>4.8</div><div style={{ fontSize: '0.7rem', color: '#6a6a6a' }}>Sterne</div></div>
-                  <div><div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#c41e3a' }}>30-45</div><div style={{ fontSize: '0.7rem', color: '#6a6a6a' }}>Min. Lieferzeit</div></div>
+                  <div><div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#ffd700' }}>130+</div><div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.7)' }}>Bewertungen</div></div>
+                  <div><div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#ffd700' }}>4.8</div><div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.7)' }}>Sterne</div></div>
+                  <div><div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#ffd700' }}>30-45</div><div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.7)' }}>Min. Lieferzeit</div></div>
                 </div>
               </div>
             </div>
@@ -242,15 +226,10 @@ export default function Home() {
             <div style={{ background: darkMode ? '#3a2a2a' : '#fef5f0', borderLeft: '4px solid #c41e3a', borderRadius: 12, padding: 16, marginBottom: 20 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c41e3a" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <div>
-                  <strong style={{ color: '#c41e3a' }}>Aktuell nur telefonische Bestellungen</strong>
-                  <div style={{ fontSize: '0.875rem', color: textSecondary, marginTop: 4 }}>Bitte rufen Sie uns an unter <strong style={{ color: '#c41e3a' }}>023 39 / 91 16 727</strong></div>
-                </div>
+                <div><strong style={{ color: '#c41e3a' }}>Aktuell nur telefonische Bestellungen</strong><div style={{ fontSize: '0.875rem', color: textSecondary, marginTop: 4 }}>Bitte rufen Sie uns an unter <strong style={{ color: '#c41e3a' }}>023 39 / 91 16 727</strong></div></div>
               </div>
             </div>
-            <div style={{ background: darkMode ? '#2a3a2a' : '#e8f5e9', borderRadius: 12, padding: 12, marginBottom: 20, textAlign: 'center' }}>
-              <span style={{ fontSize: '0.813rem', color: '#2e7d32' }}>🚚 Lieferung frei Haus ab 10€ Bestellwert</span>
-            </div>
+            <div style={{ background: darkMode ? '#2a3a2a' : '#e8f5e9', borderRadius: 12, padding: 12, marginBottom: 20, textAlign: 'center' }}><span style={{ fontSize: '0.813rem', color: '#2e7d32' }}>🚚 Lieferung frei Haus ab 10€ Bestellwert</span></div>
             {cart.length === 0 ? (
               <div style={{ textAlign: 'center', padding: '60px 20px', background: cardBg, borderRadius: 24, border: `1px solid ${borderColor}` }}>
                 <div style={{ fontSize: '3rem', marginBottom: 16 }}>🛒</div>
