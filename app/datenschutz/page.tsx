@@ -15,7 +15,7 @@ export default function Datenschutz() {
       E-Mail: pizzeria-gevelsberg@outlook.com</p>
 
       <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: '24px', marginBottom: '8px' }}>3. Hosting</h2>
-      <p>Diese Website wird bei Vercel Inc. gehostet. Beim Besuch unserer Website werden automatisch folgende Daten erfasst (sog. Server-Logfiles):</p>
+      <p>Diese Website wird bei <strong>Vercel Inc.</strong> gehostet. Beim Besuch unserer Website werden automatisch folgende Daten erfasst (sog. Server-Logfiles):</p>
       <ul style={{ marginLeft: '20px' }}>
         <li>IP-Adresse des Besuchers</li>
         <li>Datum und Uhrzeit des Zugriffs</li>
@@ -25,7 +25,7 @@ export default function Datenschutz() {
       </ul>
       <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren und technischen Bereitstellung der Website).</p>
       <p><strong>Empfänger:</strong> Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.</p>
-      <p><strong>Drittlandübermittlung:</strong> Die Daten werden in die USA übermittelt. Für die USA besteht ein Angemessenheitsbeschluss der EU-Kommission (EU-US Data Privacy Framework), sofern der Anbieter entsprechend zertifiziert ist.</p>
+      <p><strong>Drittlandübermittlung:</strong> Die Datenübertragung in die USA erfolgt auf Grundlage des EU-US Data Privacy Framework, soweit der Anbieter zertifiziert ist, sowie ergänzender Schutzmaßnahmen.</p>
 
       <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: '24px', marginBottom: '8px' }}>4. Zweck der Datenverarbeitung</h2>
       <p>Die Erfassung dieser Daten erfolgt zur Sicherstellung eines reibungslosen Verbindungsaufbaus, zur Analyse der Systemsicherheit und -stabilität sowie zu administrativen Zwecken.</p>
@@ -34,7 +34,7 @@ export default function Datenschutz() {
       <p>Die Daten werden für die Dauer von maximal 7 Tagen gespeichert und anschließend automatisch gelöscht.</p>
 
       <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: '24px', marginBottom: '8px' }}>6. Cookies</h2>
-      <p>Diese Website verwendet keine Tracking-Cookies. Es können jedoch technisch notwendige Cookies eingesetzt werden, die für den Betrieb der Website erforderlich sind.</p>
+      <p>Diese Website verwendet keine Cookies zu Analyse- oder Trackingzwecken. Es können technisch notwendige Cookies eingesetzt werden, die für den Betrieb der Website erforderlich sind.</p>
 
       <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: '24px', marginBottom: '8px' }}>7. Ihre Rechte als Betroffener</h2>
       <p>Sie haben jederzeit das Recht auf:</p>
