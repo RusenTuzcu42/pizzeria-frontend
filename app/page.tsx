@@ -136,7 +136,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
           <div onClick={() => setActiveTab('home')} style={{ cursor: 'pointer' }}>
             <h1 style={{ fontSize: '1.25rem', fontWeight: 600, letterSpacing: '-0.3px', background: 'linear-gradient(135deg, #c41e3a, #8b1a2b)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Pizzeria Napoli</h1>
-            <p style={{ fontSize: '0.7rem', color: textSecondary }}>Gewölbeger Straße 28, 45549 Sprockhövel</p>
+            <p style={{ fontSize: '0.7rem', color: textSecondary }}>Gevelsberger Str. 28, 45549 Sprockhövel</p>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
             {/* Dark Mode Button mit SVG Icons */}
@@ -327,7 +327,7 @@ export default function Home() {
       <footer style={{ background: darkMode ? '#1c1c1e' : '#f5f5f7', padding: '48px 24px 32px', marginTop: 60, borderTop: `0.5px solid ${borderColor}`, textAlign: 'center' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 48, flexWrap: 'wrap', marginBottom: 32 }}>
-            <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Adresse</div><div style={{ fontSize: '0.875rem', color: textColor }}>Gewölbeger Straße 28, 45549 Sprockhövel</div></div>
+            <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Adresse</div><div style={{ fontSize: '0.875rem', color: textColor }}>Gevelsberger Str. 28, 45549 Sprockhövel</div></div>
             <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Telefon</div><div style={{ fontSize: '0.875rem', color: textColor }}>023 39 / 91 16 727</div></div>
             <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Öffnungszeiten</div><div style={{ fontSize: '0.875rem', color: textColor }}>Täglich 11:00 - 22:00 Uhr</div></div>
             <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Lieferung</div><div style={{ fontSize: '0.875rem', color: textColor }}>Frei Haus ab 10€</div></div>
