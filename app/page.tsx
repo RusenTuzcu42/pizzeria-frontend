@@ -149,7 +149,7 @@ export default function Home() {
       </header>
 
       <div style={{ background: isOpen() ? '#e8f5e9' : '#ffebee', padding: '8px 16px', textAlign: 'center', fontSize: '0.813rem', borderBottom: `0.5px solid ${borderColor}` }}>
-        <span style={{ color: isOpen() ? '#2e7d32' : '#c62828' }}>{isOpen() ? '✓ Jetzt geöffnet' : '✗ Derzeit geschlossen (11:00 - 22:00 Uhr)'}</span>
+        <span style={{ color: isOpen() ? '#2e7d32' : '#c62828' }}>{isOpen() ? 'Jetzt geöffnet' : 'Derzeit geschlossen (11:00 - 22:00 Uhr)'}</span>
       </div>
 
       <div style={{ background: headerBg, backdropFilter: 'blur(10px)', borderBottom: `0.5px solid ${borderColor}`, padding: '8px 16px', position: 'sticky', top: '72px', zIndex: 99 }}>
@@ -259,7 +259,7 @@ export default function Home() {
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 600, fontSize: '1.125rem', marginBottom: 16, color: textColor }}><span>Gesamt</span><span style={{ color: '#c41e3a' }}>{totalPrice.toFixed(2)} €</span></div>
                   {totalPrice < 10 && (
                     <div style={{ background: darkMode ? '#3a2a2a' : '#fff3e0', borderRadius: 12, padding: 12, marginBottom: 16, textAlign: 'center' }}>
-                      <span style={{ fontSize: '0.75rem', color: '#e65100' }}>⚠️ Mindestbestellwert 10€ für Lieferung. Aktuell fehlen {(10 - totalPrice).toFixed(2)} €</span>
+                      <span style={{ fontSize: '0.75rem', color: '#e65100' }}>Mindestbestellwert 10€ für Lieferung. Aktuell fehlen {(10 - totalPrice).toFixed(2)} €</span>
                     </div>
                   )}
                   <button onClick={() => setShowCheckout(true)} disabled={totalPrice < 10} style={{ width: '100%', padding: 14, background: '#c41e3a', color: 'white', border: 'none', borderRadius: 12, fontWeight: 600, cursor: totalPrice >= 10 ? 'pointer' : 'not-allowed', opacity: totalPrice >= 10 ? 1 : 0.5 }}>Weiter zur Kasse{totalPrice < 10 ? ` (${(10 - totalPrice).toFixed(2)} € fehlen)` : ''}</button>
@@ -307,7 +307,7 @@ export default function Home() {
       {showConfirm && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(12px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 300 }}>
           <div style={{ background: cardBg, borderRadius: 28, padding: 32, maxWidth: 320, textAlign: 'center' }}>
-            <div style={{ fontSize: '3rem', marginBottom: 16 }}>✅</div>
+            <div style={{ fontSize: '3rem', marginBottom: 16 }}>✓</div>
             <h4 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: 8, color: textColor }}>Bestellung erhalten!</h4>
             <p style={{ color: textSecondary, marginBottom: 24 }}>Ihre Bestellnummer: <strong style={{ color: '#c41e3a' }}>#{orderNumber}</strong></p>
             <button onClick={() => setShowConfirm(false)} style={{ padding: '10px 24px', background: '#c41e3a', color: 'white', border: 'none', borderRadius: 40, cursor: 'pointer' }}>Weiter shoppen</button>
