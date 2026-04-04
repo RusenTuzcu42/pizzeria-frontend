@@ -272,7 +272,7 @@ export default function Home() {
             </div>
 
             <div style={{ background: darkMode ? '#2a3a2a' : '#e8f5e9', borderRadius: 12, padding: 12, marginBottom: 20, textAlign: 'center' }}>
-              <span style={{ fontSize: '0.813rem', color: '#2e7d32' }}>🚚 Lieferung frei Haus ab 10€ Bestellwert</span>
+              <span style={{ fontSize: '0.813rem', color: '#2e7d32' }}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: "6px" }}><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>Lieferung frei Haus ab 10€ Bestellwert</span>
             </div>
 
             {cart.length === 0 ? (
