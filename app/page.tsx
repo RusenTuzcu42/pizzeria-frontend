@@ -176,7 +176,7 @@ export default function Home() {
               )}
             </button>
             <div style={{ textAlign: 'right' }}>
-              <div style={{ fontSize: '1.125rem', fontWeight: 600 }}>023 39 / 91 16 727</div>
+              <div style={{ fontSize: '1.125rem', fontWeight: 600 }}>02339 9116777</div>
               <div style={{ fontSize: '0.7rem', color: textSecondary }}>Täglich 11:00 - 22:00 Uhr</div>
             </div>
           </div>
@@ -266,7 +266,7 @@ export default function Home() {
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c41e3a" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 <div>
                   <strong style={{ color: '#c41e3a' }}>Aktuell nur telefonische Bestellungen</strong>
-                  <div style={{ fontSize: '0.875rem', color: textSecondary, marginTop: 4 }}>Bitte rufen Sie uns an unter <strong style={{ color: '#c41e3a' }}>023 39 / 91 16 727</strong></div>
+                  <div style={{ fontSize: '0.875rem', color: textSecondary, marginTop: 4 }}>Bitte rufen Sie uns an unter <strong style={{ color: '#c41e3a' }}>02339 9116777</strong></div>
                 </div>
               </div>
             </div>
@@ -328,7 +328,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 48, flexWrap: 'wrap', marginBottom: 32 }}>
             <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Adresse</div><div style={{ fontSize: '0.875rem', color: textColor }}>Gevelsberger Str. 28, 45549 Sprockhövel</div></div>
-            <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Telefon</div><div style={{ fontSize: '0.875rem', color: textColor }}>023 39 / 91 16 727</div></div>
+            <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Telefon</div><div style={{ fontSize: '0.875rem', color: textColor }}>02339 9116777</div></div>
             <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Öffnungszeiten</div><div style={{ fontSize: '0.875rem', color: textColor }}>Täglich 11:00 - 22:00 Uhr</div></div>
             <div><div style={{ fontSize: '0.7rem', color: textSecondary }}>Lieferung</div><div style={{ fontSize: '0.875rem', color: textColor }}>Frei Haus ab 10€</div></div>
           </div>
