@@ -3,8 +3,8 @@ import './globals.css';
 
 export const metadata: Metadata = {
   // Basis SEO
-  title: 'Pizzeria Napoli | Beste Pizza in Haßlinghausen & Sprockhövel',
-  description: '🍕 Die beste Pizza in Haßlinghausen! Handgemachte Pizzen, frische Pasta, Schnitzel, Salate und Gyros. Lieferung frei Haus ab 10€. Jetzt online bestellen!',
+  title: 'Pizzeria Napoli | Pizza in Haßlinghausen & Sprockhövel',
+  description: ' Die Pizza in Haßlinghausen! Handgemachte Pizzen, frische Pasta, Schnitzel, Salate und Gyros. Lieferung frei Haus ab 10€. Jetzt online bestellen!',
   keywords: 'Pizzeria Haßlinghausen, Pizza Haßlinghausen, Pizzeria Sprockhövel, Pizza Sprockhövel, Pizzeria Napoli, Pizza bestellen, Lieferdienst Haßlinghausen, italienische Küche, Pasta, Schnitzel, Gyros, Salate, Gevelsberg, Pizzeria Napoli Haßlinghausen, Pizza Lieferung, Pizzeria in der Nähe',
   robots: 'index, follow',
   authors: [{ name: 'Pizzeria Napoli', url: 'https://pizzeria-napoli-gevelsberg.vercel.app' }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   
   // Open Graph (Facebook, WhatsApp, LinkedIn, Telegram)
   openGraph: {
-    title: 'Pizzeria Napoli | Beste Pizza in Haßlinghausen',
+    title: 'Pizzeria Napoli | Pizza in Haßlinghausen',
     description: '🍕 Handgemachte Pizzen, frische Pasta, Schnitzel & mehr. Lieferung frei Haus ab 10€. Jetzt online bestellen!',
     url: 'https://pizzeria-napoli-gevelsberg.vercel.app',
     siteName: 'Pizzeria Napoli',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         url: '/images/pizza.png',
         width: 1200,
         height: 630,
-        alt: 'Pizzeria Napoli - Beste Pizza in Haßlinghausen',
+        alt: 'Pizzeria Napoli - Pizza in Haßlinghausen',
       },
     ],
     emails: ['info@pizzeria-napoli.de'],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'Pizzeria Napoli | Beste Pizza in Haßlinghausen',
+    title: 'Pizzeria Napoli | Pizza in Haßlinghausen',
     description: '🍕 Handgemachte Pizzen, frische Pasta, Schnitzel & mehr. Lieferung frei Haus ab 10€!',
     images: ['/images/pizza.png'],
     site: '@pizzeria_napoli',
